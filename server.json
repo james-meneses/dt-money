@@ -15,6 +15,14 @@
       "category": "Alimentação",
       "price": 50,
       "createdAt": "2024-08-31T22:05:01.059Z"
+    },
+    {
+      "id": 3,
+      "description": "Viagem para Morro de São Paulo",
+      "type": "outcome",
+      "category": "Viagens",
+      "price": 7500,
+      "createdAt": "2024-08-25T22:05:01.059Z"
     }
   ]
 }
