@@ -23,6 +23,22 @@
       "category": "Viagens",
       "price": 7500,
       "createdAt": "2024-08-25T22:05:01.059Z"
+    },
+    {
+      "description": "Consultoria de SEO - Silicone Center",
+      "price": 3000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2024-09-02T11:55:38.225Z",
+      "id": 4
+    },
+    {
+      "description": "Netflix",
+      "price": 65,
+      "category": "Streaming",
+      "type": "outcome",
+      "createdAt": "2024-09-02T12:14:08.670Z",
+      "id": 5
     }
   ]
 }
