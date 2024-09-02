@@ -12,8 +12,9 @@ import * as z from "zod";
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 // import { api } from "../../lib/axios";
-import { useContext } from "react";
+// import { useContext } from "react";
 import { TransactionsContext } from "../../contexts/TransactionsContext";
+import { useContextSelector } from "use-context-selector";
 
 const NewTransactionFormSchema = z.object({
   description: z.string(),
@@ -25,7 +26,12 @@ const NewTransactionFormSchema = z.object({
 type NewTransactionFormInputs = z.infer<typeof NewTransactionFormSchema>;
 
 export function NewTransactionModal() {
-  const { createTransaction } = useContext(TransactionsContext);
+  const createTransaction = useContextSelector(
+    TransactionsContext,
+    (context) => {
+      return context.createTransaction;
+    }
+  );
 
   const {
     control,
